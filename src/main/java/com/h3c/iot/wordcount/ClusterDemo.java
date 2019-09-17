@@ -1,12 +1,9 @@
 package com.h3c.iot.wordcount;
 
-import akka.actor.AbstractActor;
 import akka.actor.UntypedActor;
 import akka.cluster.Cluster;
 import akka.cluster.ClusterEvent;
 import akka.cluster.Member;
-import scala.PartialFunction;
-import scala.runtime.BoxedUnit;
 
 public class ClusterDemo extends UntypedActor {
     Cluster cluster = Cluster.get(getContext().system());
